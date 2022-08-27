@@ -5,8 +5,21 @@
 }
 
 body {
-    background-color: #EAC926;
+    background-color: #ebebeb;
     font-family: 'Roboto', sans-serif;
+}
+
+.top-header {
+    padding: 5%;
+}
+
+header {
+    background-color: #EAC926;
+}
+
+header div.logo {
+    width: 50%;
+    padding: 10px;
 }
 
 p{
@@ -31,6 +44,8 @@ p{
 
 .menu {
     font-size: 12px;
+    color: #000;
+    display: none;
 }
 
 .cuotas {
@@ -43,6 +58,33 @@ p{
     text-align: center;
 }
 
+.burger-menu i {
+    background-color: #0044AA ;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    height: 40px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    width: 40px;
+}
+
+header .form .input{
+    font-size:13px;
+    background-color: #FFF;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 2px;
+}
+
+header .form .submit{
+    background-color: #FFF;
+    border: 1px solid #000;
+    color: #666;
+    width: 10%;
+}
+
 footer{
     background-color: #ebebeb;
     color:#666;
@@ -52,6 +94,72 @@ footer{
     text-align: center;
 }
 
-h3 {
+.descripcion {
     font-size: 18px;
+    color: #666;
+    display: none;
+}
+
+section.banner img{
+    width: 100%;
+}
+
+main{
+    width: 90%;
+    padding: 5%;
+}
+
+main section article {
+    margin: 10px;
+    background-color: #fff;
+}
+
+main section article img {
+    width: 100%;
+}
+
+main section article i, .desc{
+    color: #39b54a;
+}
+
+.articulo {
+    border: solid 1px #ebebeb;
+    padding: 15px;
+}
+
+
+/*tablets*/
+@media (min-width: 361px) {
+    .descripcion{
+        visibility: visible;
+    }
+
+    .menu{
+        visibility: visible;
+    }
+
+    .burger-menu i {
+        visibility: hidden;
+    }
+
+}
+
+/*desktop*/
+@media (min-width: 769px) {
+    main section article {
+        box-shadow : 0px 0px 10px rgb(100,100,100);
+    }
+
+    .descripcion{
+        visibility: visible;
+    }
+
+    .menu{
+        visibility: visible;
+    }
+
+    .burger-menu i {
+        visibility: hidden;
+    }
+
 }
