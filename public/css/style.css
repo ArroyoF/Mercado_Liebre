@@ -178,6 +178,9 @@ main section article i {
     padding: 15px;
     display: flex;
     width: 100%;
+    flex-wrap: wrap;
+    align-items: baseline;
+    position: relative;
 }
 
 
@@ -188,10 +191,27 @@ main section article i {
     .descripcion{
         visibility: visible;
         display: block;
+        font-size: 16px;
+    }
+
+    .articulo {
+        display: block;
+    }
+
+    main section div.productos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    main section div.productos article {
+        width: 45%;
     }
 
     .menu{
-        visibility: visible;
+        display: flex;
     }
 
     .burger-menu i {
@@ -202,12 +222,23 @@ main section article i {
         box-shadow : 0px 0px 10px rgb(100,100,100);
     }
 
+
+
 }
 
 /*desktop*/
 @media (min-width: 769px) {
+    main {
+        padding: 2%;
+    }
+    
     main section article {
         box-shadow : 0px 0px 10px rgb(100,100,100);
+    }
+
+
+    main section div.productos article {
+        width: 22%;
     }
 
     .descripcion{
