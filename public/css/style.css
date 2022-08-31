@@ -18,8 +18,10 @@ body {
 }
 
 .form {
-    width: 50%;
+    width: 40%;
     display: flex;
+    align-items: center;
+    height: 24px;
 }
 
 header {
@@ -39,7 +41,6 @@ header div.logo {
 header .form .input{
     font-size:13px;
     background-color: #FFF;
-    border: 1px solid #000;
     outline: none;
     color: #666;
     padding: 2px;
@@ -50,7 +51,6 @@ header .form .input{
 
 header .form .submit{
     background-color: #FFF;
-    border: 1px solid #000;
     color: #666;
     width: 10%;
 }
@@ -72,30 +72,11 @@ header ul li a {
     text-decoration: none;
 }
 
-
-main section article div {
-    font-size: 12px;
-    display: flex;
-    flex-direction: row;
+article div .articulo {
+    width: 100%;
+    padding: 15px;
 }
 
-.precio {
-    font-size: 18px;
-    flex-grow: 0.3;
-    padding: 5px;
-}
-
-.desc {
-    font-size: 16px;
-    flex-grow: 0.7;
-    padding: 5px;
-}
-
-.productos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
 
 .ultima-visita h2 {
     font-size: 24px;
@@ -131,20 +112,6 @@ main section article div {
     width: 40px;
 }
 
-footer{
-    background-color: #ebebeb;
-    color:#666;
-}
-
-.pie{
-    text-align: center;
-}
-
-.descripcion {
-    font-size: 18px;
-    color: #666;
-    display: none;
-}
 
 section.banner img{
     width: 100%;
@@ -153,7 +120,6 @@ section.banner img{
 main{
     width: 90%;
     margin:0 auto;
-    padding: 5%;
 }
 
 main section article {
@@ -162,6 +128,13 @@ main section article {
 }
 
 main section article img {
+    width: 100%;
+}
+
+
+article div.articulo {
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
     width: 100%;
 }
 
@@ -183,16 +156,41 @@ main section article i {
     top: -30px;
 }
 
-.articulo {
-    border: solid 1px #ebebeb;
-    padding: 15px;
+.valor {
     display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    align-items: baseline;
-    position: relative;
 }
 
+.precio {
+    font-size: 18px;
+    flex-grow: 0.3;
+}
+
+.desc {
+    font-size: 16px;
+    flex-grow: 0.7;
+}
+
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.descripcion {
+    font-size: 18px;
+    color: #666;
+    display: none;
+}
+
+footer{
+    background-color: #ebebeb;
+    color:#666;
+}
+
+.pie{
+    text-align: center;
+}
 
 
 
@@ -200,8 +198,9 @@ main section article i {
 @media (min-width: 361px) {
     .descripcion{
         visibility: visible;
-        display: block;
+        display: flex;
         font-size: 14px;
+
     }
 
 
@@ -210,10 +209,13 @@ main section article i {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
-        align-items: flex-start;
     }
 
-    main section div.productos article {
+    .ultima-visita h2, .ofertas h2 {
+        margin: 10px 0px;
+    }
+
+    .productos article {
         width: 45%;
     }
 
@@ -267,8 +269,7 @@ main section article i {
         left: 80%;
     }
 
-
-    main section div.productos article {
+    .productos article {
         width: 22%;
     }
 
@@ -283,7 +284,19 @@ main section article i {
 
     .ultima-visita h2, .ofertas h2 {
         font-size: 16px;
-        margin: 10px 0px;
+    }
+
+    .precio {
+        font-size: 14px;
+    }
+
+    .desc {
+        font-size: 12px;
+        display: inline;
+    }
+
+    .descripcion {
+        font-size: 10px;
     }
 
 
