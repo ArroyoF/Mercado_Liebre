@@ -180,17 +180,10 @@ main section article i {
 .descripcion {
     font-size: 18px;
     color: #666;
-    display: none;
+    visibility: hidden;
+
 }
 
-footer{
-    background-color: #ebebeb;
-    color:#666;
-}
-
-.pie{
-    text-align: center;
-}
 
 .register form {
     width: 70%;
@@ -276,7 +269,70 @@ label, h4 {
     appearance: button-bevel;
     }
 
+ .boton_reset:hover {
+    background-color: #7F1734;
+    color: white;
+    border-radius: 30px;
+    appearance: button-bevel;
+    }
 
+main section article i:hover {
+    transform:rotate(-90deg) ;
+}
+
+main section article:hover .descripcion {
+    visibility: visible;
+    transition: all 1s ease-in;
+    margin: 10px 0px;
+}
+
+main section article:hover {
+    box-shadow : 0px 0px 10px rgb(100,100,100);
+} 
+
+footer{
+    background-color: #ebebeb;
+    color:#666;
+    justify-content: space-around;
+    margin: auto;
+    flex-direction: column;
+}
+
+footer div {
+    padding:10px 0px;
+}
+
+footer div i {
+    color: blue;
+    font-size: 30px;
+}
+
+.detalle {
+    font-size: 12px;
+}
+
+
+footer div.detalle p {
+    font-size: 10px;
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+
+}
+
+footer .pie{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer div i:hover {
+    color: #39b54a;
+}
+
+footer p {
+    font-size: 10px;
+}
 
 
 
@@ -331,6 +387,15 @@ label, h4 {
         width: 70%;
         border-radius: 30px;
         appearance: button-bevel;
+    }
+
+    footer {
+        flex-direction: row;
+    }
+
+    footer div.detalle p {
+        font-size: 14px;
+        width: 60%;
     }
 
 }
@@ -398,6 +463,28 @@ label, h4 {
 
     .submit {
         width: 30%;
+    }
+
+
+
+    footer .pie {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between; 
+    }
+
+    .pie article {
+        width: 30%;
+    }
+
+    footer div.detalle p {
+        font-size: 9px;
+    }
+
+    .detalle h3{
+        font-size: 13px;
     }
 
 }
