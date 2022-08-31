@@ -18,7 +18,7 @@ body {
 }
 
 .form {
-    width: 40%;
+    width: 50%;
     display: flex;
     align-items: center;
     height: 24px;
@@ -192,6 +192,92 @@ footer{
     text-align: center;
 }
 
+.register form {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:left;
+    max-width: 500px;
+}
+
+.login {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:left;
+    max-width: 500px;
+}
+
+.login form {
+    width: 100%;
+}
+
+.login form div.ingreso input {
+    width: 100%;
+    margin: 10px 0px;
+    border-radius: 5px;
+    appearance: button-bevel;
+    height: 30px;
+}
+
+.datos {
+    width: 100%;
+}
+
+
+.boton_enviar {
+    border-radius: 30px;
+    appearance: button-bevel;
+}
+
+.register form div.datos input {
+    width: 90%;
+    margin: 10px 0px;
+    border-radius: 30px;
+    appearance: button-bevel;
+}
+
+label, h4 {
+    font-size: 12px;
+    width: 100%;
+}
+
+.interests {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.interests div {
+    width: 100%;
+    margin: 10px 0px;
+}
+
+.profile {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin: 10px 0px;
+
+}
+
+.register form div.file input {
+    width: 90%;
+    margin: 10px 0px;
+    font-size: 10px;
+}
+
+.boton_enviar:hover {
+    background-color: #0022AA;
+    color: white;
+    border-radius: 30px;
+    appearance: button-bevel;
+    }
+
+
+
 
 
 /*tablets*/
@@ -223,11 +309,6 @@ footer{
         flex-wrap: nowrap;
     }
 
-    .menu{
-        display: flex;
-        padding: 2%;
-    }
-
     nav ul.navbar {
         display: flex;
         flex-direction: row;
@@ -235,20 +316,21 @@ footer{
         flex-grow: 0.5;
     }
 
-    nav ul.login {
+    nav ul.log {
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
         flex-grow: 0.5;
     }
 
-    .burger-menu i {
-        visibility: hidden;
-        display: none;
-    }
-
     main section article {
         box-shadow : 0px 0px 10px rgb(100,100,100);
+    }
+
+    .file {
+        width: 70%;
+        border-radius: 30px;
+        appearance: button-bevel;
     }
 
 }
@@ -271,6 +353,16 @@ footer{
 
     .productos article {
         width: 22%;
+    }
+
+    .burger-menu i {
+        visibility: hidden;
+        display: none;
+    }
+
+    .menu{
+        display: flex;
+        padding: 2%;
     }
 
 
