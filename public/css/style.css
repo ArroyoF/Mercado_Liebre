@@ -136,6 +136,7 @@ article div.articulo {
     border-top: solid 1px #ebebeb;
     padding: 15px;
     width: 100%;
+    flex-grow: 1;
 }
 
 main section article i, .desc{
@@ -358,7 +359,7 @@ footer p {
     }
 
     .productos article {
-        width: 45%;
+        /* width: 45%; */
     }
 
     .top-header {
@@ -417,7 +418,7 @@ footer p {
     }
 
     .productos article {
-        width: 22%;
+        width: 45%;
     }
 
     .burger-menu i {
