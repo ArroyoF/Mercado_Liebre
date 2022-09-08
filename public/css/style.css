@@ -358,9 +358,9 @@ footer p {
         margin: 10px 0px;
     }
 
-    .productos article {
-        /* width: 45%; */
-    }
+    /*.productos article {
+         width: 45%; 
+    } */
 
     .top-header {
         flex-wrap: nowrap;
